@@ -6,3 +6,6 @@ services:
     network_mode: host
     build:
       context: .
+    environment:
+      - PORT=80
+      - SUBDOMAIN=example

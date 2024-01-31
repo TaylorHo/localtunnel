@@ -4,4 +4,4 @@ WORKDIR /
 RUN apk add --no-cache --update nodejs npm
 RUN npm i -g localtunnel
 
-CMD ["npx", "localtunnel", "--port", "5678", "--subdomain", "hotay"]
+CMD ["sh", "-c", "npx localtunnel --port $PORT --subdomain $SUBDOMAIN"]
